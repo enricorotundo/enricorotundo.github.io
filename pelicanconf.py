@@ -21,9 +21,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('GitHub', 'https://github.com/enricorotundo'),
-         ('LinkedIn', 'https://www.linkedin.com/in/enricorotundo/'),
-)
+#LINKS = (('GitHub', 'https://github.com/enricorotundo'),
+#         ('LinkedIn', 'https://www.linkedin.com/in/enricorotundo/'),
+#)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
