@@ -51,8 +51,7 @@ To help this narrative I'll report that here: &lt;/p&gt;
 &lt;p&gt;A more technical diagram of the key components in Jupyter is available &lt;a href="https://jupyter.readthedocs.io/en/latest/architecture/visual_overview.html"&gt;here&lt;/a&gt;, however, I believe it's incomplete since it doesn't include many of the hottest releases like JupyterLab.&lt;/p&gt;
 &lt;p&gt;So? The Jupyter project is about supporting the development of modular components (listed above) that can be improved, extended and bundled by the entire community!
 Only the official &lt;a href="https://github.com/jupyter"&gt;Jupyter GitHub account&lt;/a&gt; counts 69 repositories and these are only a subset of what's available on the web.&lt;/p&gt;
-&lt;p&gt;Developers put out a call to contribute on modules and get back to them with feedbacks.
-After I got back from the conference I googled a little bit and there're so many repos out there; so let's foster their development by trying them out and contribute.   &lt;/p&gt;
+&lt;p&gt;Developers put out a call to contribute on modules and get back to them with feedbacks.&lt;/p&gt;
 &lt;h2&gt;JupyterLab's extensions&lt;/h2&gt;
 &lt;p&gt;First of all a clarification.
 In the Jupyter eco-system, there are many things called 'widget' and this might lead to some confusion.
