@@ -1,2 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Enrico Rotundo' Blog - Generic</title><link href="https://enricorotundo.github.io/" rel="alternate"></link><link href="https://enricorotundo.github.io/feeds/generic.atom.xml" rel="self"></link><id>https://enricorotundo.github.io/</id><updated>2018-08-24T18:25:00+02:00</updated><entry><title>Init</title><link href="https://enricorotundo.github.io/init.html" rel="alternate"></link><published>2018-08-24T18:25:00+02:00</published><updated>2018-08-24T18:25:00+02:00</updated><author><name>Enrico Rotundo</name></author><id>tag:enricorotundo.github.io,2018-08-24:/init.html</id><summary type="html">&lt;p&gt;Hello world.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello world.&lt;/p&gt;</content></entry><entry><title>Init22</title><link href="https://enricorotundo.github.io/init22.html" rel="alternate"></link><published>2018-08-24T18:25:00+02:00</published><updated>2018-08-24T18:25:00+02:00</updated><author><name>Enrico Rotundo</name></author><id>tag:enricorotundo.github.io,2018-08-24:/init22.html</id><summary type="html">&lt;p&gt;Hello world.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello world.&lt;/p&gt;</content></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Enrico Rotundo' Blog - Generic</title><link href="https://enricorotundo.github.io/" rel="alternate"></link><link href="https://enricorotundo.github.io/feeds/generic.atom.xml" rel="self"></link><id>https://enricorotundo.github.io/</id><updated>2018-08-31T18:25:00+02:00</updated><entry><title>JupyterCon 2018</title><link href="https://enricorotundo.github.io/jupytercon-2018.html" rel="alternate"></link><published>2018-08-31T18:25:00+02:00</published><updated>2018-08-31T18:25:00+02:00</updated><author><name>Enrico Rotundo</name></author><id>tag:enricorotundo.github.io,2018-08-31:/jupytercon-2018.html</id><summary type="html">&lt;h1&gt;JupyterCon 2018: Open Source, Collaboration &amp;amp; More&lt;/h1&gt;
+&lt;p&gt;JupyterCon is a yearly conference held in New York City that promotes the Jupyter project, the values behind it and a set of notable projects built on top of it.
+It's organized by NumFOCUS Foundation and O'Reilly Media with the support of several commercial …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;JupyterCon 2018: Open Source, Collaboration &amp;amp; More&lt;/h1&gt;
+&lt;p&gt;JupyterCon is a yearly conference held in New York City that promotes the Jupyter project, the values behind it and a set of notable projects built on top of it.
+It's organized by NumFOCUS Foundation and O'Reilly Media with the support of several commercial sponsors.
+You can checkout the schedule &lt;a href="https://conferences.oreilly.com/jupyter/jup-ny/schedule/2018-08-21"&gt;here&lt;/a&gt; and hopefully save the date for 2019!&lt;/p&gt;
+&lt;p&gt;Thanks to my company &lt;a href="https://twitter.com/Hal24k"&gt;@Hal24k&lt;/a&gt; I attended the 2018 edition for the entire 4 days.
+It's been a great experience with lots of inspiring talks and insightful tutorials.
+Make sure to check out the &lt;a href="https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/stype/1268"&gt;related events&lt;/a&gt; like poster session &amp;amp; drinks that take place before of after the conference hours; note there will be additional events arranged by main sponsors (like Netflix) held in external venues but these are not listed on the conference webpage.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;Make sure you check the keynotes linked in &lt;a href="https://www.oreilly.com/ideas/highlights-from-jupytercon-ny-2018"&gt;O'Reilly page&lt;/a&gt;.
+My favourites ones are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Paco Nathan's "Jupyter trends in 2018"&lt;/li&gt;
+&lt;li&gt;Carol Willing's "Sustaining wonder: Jupyter and the knowledge commons"&lt;/li&gt;
+&lt;li&gt;Tracy Teal's "Democratizing data"&lt;/li&gt;
+&lt;li&gt;Julia Meinwald's "Why contribute to open source?"&lt;/li&gt;
+&lt;li&gt;Fernando Perez's "Sea change: What happens when Jupyter becomes pervasive at a university?"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since Paco's keynote is the best in my opinion, here's the video.
+This one in particoular gives you an overview of the scale of Jupyter project, and it's just terrific to see so much potential.
+&lt;div align="center"&gt;
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/t0MNlJV7_gM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2&gt;Lesson learnt&lt;/h2&gt;
+&lt;p&gt;Foremost take home is a deeper understanding of what Jupyter actually is.
+As many data scientist, I've been using Jupyter Notebook and JupterLab in my daily work.
+I thought it was a revolutionary tool that brought IPython interactivty to the next level.
+I was wrong.
+The first mistake was confusing Jupyter with Notebook or Lab as part of the unique blob.
+If you think about it's not that atyplical.
+Most users start with these tools by working on a scientific assignment and all you care about is getting to the results.
+You don't ask yourself much about what's behind all that.&lt;/p&gt;
+&lt;p&gt;Trurth is Notebook and Lab are just 2 of the many components of the Jupyter eco-system.
+Indeed you can think of Jupyter as broader project that comprises a multitude of tools.
+The &lt;a href="https://jupyter.org/documentation"&gt;documentation page&lt;/a&gt; gives you a nice overview of what I'm talking about.
+To help this narrative I'll report that here, adding my considerations: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;General:&lt;/strong&gt; yes you can contribute to Jupyter!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Interfaces:&lt;/strong&gt; there are many more than Notebook and JupyterLab! Check out third parties' &lt;a href="https://nteract.io/"&gt;nteract&lt;/a&gt;, a desktop application that bring &lt;code&gt;.ipynb&lt;/code&gt; files editing to your notebook.&lt;/li&gt;
+&lt;li&gt;IPython&lt;/li&gt;
+&lt;li&gt;Kernels&lt;/li&gt;
+&lt;li&gt;Widgets&lt;/li&gt;
+&lt;li&gt;Notebook Documents&lt;/li&gt;
+&lt;li&gt;JupyterHub&lt;/li&gt;
+&lt;li&gt;Deployment&lt;/li&gt;
+&lt;li&gt;Foundations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So? Jupyter project is about supporting the developlment of modular components (listed above) that can be improved, extended and bundled by the entire community. 
+Only the official &lt;a href="https://github.com/jupyter"&gt;Jupyter GitHub account&lt;/a&gt; counts 69 repositories and these are only a subset of what's available on the web.&lt;/p&gt;
+&lt;p&gt;A technical diagram of the key components in Jupyter is available &lt;a href="https://jupyter.readthedocs.io/en/latest/architecture/visual_overview.html"&gt;here&lt;/a&gt;, however I believe it's incomplete since it doesn't include many of the hottest releases like JupyterLab.&lt;/p&gt;
+&lt;h2&gt;JupyterLab's extensions&lt;/h2&gt;
+&lt;p&gt;First of all a clarification.
+In the Jupyter eco-system there are many things called 'widget' and this might lead to some confusion.
+For instance, it's not entirely clear to me the difference between the &lt;a href="https://ipywidgets.readthedocs.io/en/latest/index.html"&gt;Jupyter Widgets&lt;/a&gt; and the &lt;a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html"&gt;JupyterLab Extensions&lt;/a&gt; in terms of software.
+However, I'd like to spend a few words on JupyterLab's Extensions because I think that's the real cool innovation with Lab, at least from the user point of view.&lt;/p&gt;
+&lt;p&gt;The core development team was present at JupyerCon and they made it clear: JupyterLab is an extensible platform.
+Current Lab is nothing more than a bundle of extensions that deliver the "standard" experience but users are encouraged to build their own.&lt;/p&gt;
+&lt;p&gt;Throught the training we got hands on &lt;a href="https://github.com/jupyterlab/jupytercon-jupyterlab-training"&gt;this repo&lt;/a&gt; to build a couple of extensions.
+Most of the code is in &lt;a href="https://en.wikipedia.org/wiki/TypeScript"&gt;TypeScript&lt;/a&gt; and nodejs/npm so you'll have to be a bit familiar with these web-dev technologies.
+We managed to build a widget that &lt;a href="https://github.com/jupyterlab/jupyterlab-mp4/blob/master/tutorial.md"&gt;renders MP4 videos&lt;/a&gt; with just a few lines of code.
+The idea is you start from a &lt;a href="https://en.wikipedia.org/wiki/MIME"&gt;MIME&lt;/a&gt; renderer template and write the necessary code to open, serialize and display mp4 content.
+A bit of CSS will improve make the layout nice and adaptive to the window size.
+Note this is a functionl but relatively simple plugin, that involves only front-end coding.
+More complex extensions, such as the one for &lt;a href="https://github.com/jupyterlab/jupyterlab-github"&gt;accessing GitHub repositories&lt;/a&gt; needs a bit of back-end tweaking.&lt;/p&gt;
+&lt;p&gt;The message is: here's the platform, now build your own extensions.
+Indeed there are quite many extensions out there but not everyone is aware of it.
+A good starting point is probably yhe "Extension Manager", a widget that lets you lookup and intall plugins.
+It's disabled by default (at least in v0.33.12) and here's how to enable it.
+The widget will add an entry on the left side tab listing all the available extensions.
+You can install one just by clicking on the "Install" button.
+Bear in mind most extensions are early release so make sure you check the related repository to grasp if it's suitable.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="JupyterLab activate extension manager" src="gifs/jupyter-enable-extension-manager.gif" width="560px"&gt;&lt;/p&gt;
+&lt;p&gt;Current version is only ~v0.34 and there's still some time to go for the v1.0.
+Note accroding to &lt;a href="https://twitter.com/sccolbert"&gt;@sccolber&lt;/a&gt; v1.0 might break extensions written for &amp;gt;v1.0.&lt;/p&gt;</content></entry></feed>
