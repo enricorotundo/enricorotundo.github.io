@@ -165,9 +165,9 @@ Most of the code is in <a href="https://en.wikipedia.org/wiki/TypeScript">TypeSc
 Among others, we managed to build a widget that <a href="https://github.com/jupyterlab/jupyterlab-mp4/blob/master/tutorial.md">renders MP4 videos</a> with just a few lines of code.
 The idea is you start from a <a href="https://en.wikipedia.org/wiki/MIME">MIME</a> renderer template and write the necessary code to open, serialize and display mp4 content.
 A bit of CSS will make the layout nice and neat.
-Note this is a functional but relatively simple plugin, that involves only front-end coding.
-More complex extensions, such as the one for <a href="https://github.com/jupyterlab/jupyterlab-github">accessing GitHub repositories</a> needs a bit of back-end tweaking.</p>
-<p>The message is: here's the platform, now build your own extensions.
+This is a functional but relatively simple plugin, that involves only front-end coding.
+More complex extensions, such as the one for <a href="https://github.com/jupyterlab/jupyterlab-github">accessing GitHub repositories</a> needs a bit of back-end hacking.</p>
+<p>The bottom line is: here's the platform, now build your own extensions.
 Indeed there are quite many extensions out there but not everyone is aware of it.
 A good starting point is probably the "Extension Manager", a widget that lets you look up and install plugins.
 It's disabled by default (at least in v0.33.12) and here's how to enable it.
@@ -175,6 +175,7 @@ The widget will add an entry on the left side tab listing all the available exte
 You can install one just by clicking on the "Install" button.
 Bear in mind most extensions are early release so make sure you check the related repository to grasp if it's suitable.</p>
 <p><img alt="JupyterLab activate extension manager" src="gifs/jupyter-enable-extension-manager.gif" width="560px"></p>
+<p>I suggest to look up for extensions on GitHub and Npm directly as well.</p>
 <p>Note: the current version is only ~v0.34 and there's still some time to go for the v1.0.
 Accroding to <a href="https://twitter.com/sccolbert">@sccolber</a> v1.0 might break extensions written for &gt;v1.0.</p>
   </div>
