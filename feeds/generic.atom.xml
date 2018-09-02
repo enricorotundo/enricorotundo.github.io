@@ -35,8 +35,8 @@ Most users start with these tools by working on a scientific assignment and all 
 You don't ask yourself much about what's behind all that.&lt;/p&gt;
 &lt;p&gt;Truth is Notebook and Lab are just 2 of the many components of the Jupyter eco-system.
 Indeed you can think of Jupyter as a broader project that comprises a multitude of tools.
-The &lt;a href="https://jupyter.org/documentation"&gt;documentation page&lt;/a&gt; gives you a nice overview of what I'm talking about.
-To help this narrative I'll report that here, adding my considerations: &lt;/p&gt;
+This &lt;a href="https://jupyter.org/documentation"&gt;documentation page&lt;/a&gt; gives you a nice overview of what I'm talking about.
+To help this narrative I'll report that here: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;General: yes you can contribute to Jupyter!&lt;/li&gt;
 &lt;li&gt;User Interfaces: there are many more than Notebook and JupyterLab! Check out third parties' &lt;a href="https://nteract.io/"&gt;nteract&lt;/a&gt;, a desktop application that bring &lt;code&gt;.ipynb&lt;/code&gt; files editing to your notebook.&lt;/li&gt;
