@@ -58,7 +58,7 @@ In the Jupyter eco-system, there are many things called 'widget' and this might 
 For instance, it's not entirely clear to me the difference between the &lt;a href="https://ipywidgets.readthedocs.io/en/latest/index.html"&gt;Jupyter Widgets&lt;/a&gt; and the &lt;a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html"&gt;JupyterLab Extensions&lt;/a&gt;, at least in terms of implementation.
 Anyways, I'd like to spend a few words on JupyterLab's Extensions because I think that's the really cool innovation with Lab from the user point of view.&lt;/p&gt;
 &lt;p&gt;The core development team was present at JupyerCon and they made it clear: JupyterLab is an extensible platform.
-Current Lab is nothing more than a bundle of extensions that deliver the "standard" experience but users are encouraged to build their own.&lt;/p&gt;
+The Lab application is nothing more than a bundle of extensions that deliver the "standard" experience but users are encouraged to build their own.&lt;/p&gt;
 &lt;p&gt;Throughout the training, we got hands-on &lt;a href="https://github.com/jupyterlab/jupytercon-jupyterlab-training"&gt;this repo&lt;/a&gt; to build a couple of extensions.
 Most of the code is in &lt;a href="https://en.wikipedia.org/wiki/TypeScript"&gt;TypeScript&lt;/a&gt; and nodejs/npm so you'll have to be a bit familiar with these web-dev technologies.
 We managed to build a widget that &lt;a href="https://github.com/jupyterlab/jupyterlab-mp4/blob/master/tutorial.md"&gt;renders MP4 videos&lt;/a&gt; with just a few lines of code.
