@@ -30,7 +30,7 @@ As many data scientist, I've been using Jupyter Notebook and JupterLab in my dai
 I thought it was a revolutionary tool that brought IPython interactivity to the next level.
 I was wrong.
 The first mistake was confusing Jupyter with Notebook or Lab as part of the unique blob.
-If you think about it's not that atypical.
+If you think about that's quite common.
 Most users start with these tools by working on a scientific assignment and all you care about is getting to the results.
 You don't ask yourself much about what's behind all that.&lt;/p&gt;
 &lt;p&gt;Truth is Notebook and Lab are just 2 of the many components of the Jupyter eco-system.
