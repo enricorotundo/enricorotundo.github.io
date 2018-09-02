@@ -76,4 +76,4 @@ Bear in mind most extensions are early release so make sure you check the relate
 &lt;p&gt;&lt;img alt="JupyterLab activate extension manager" src="gifs/jupyter-enable-extension-manager.gif" width="560px"&gt;&lt;/p&gt;
 &lt;p&gt;I suggest to look up for extensions on GitHub and Npm directly as well.&lt;/p&gt;
 &lt;p&gt;Note: the current version is ~v0.34 and there's still some time to go for the v1.0.
-Accroding to &lt;a href="https://twitter.com/sccolbert"&gt;@sccolber&lt;/a&gt; the way to v1.0 will probably break some of the existing extensions written.&lt;/p&gt;</content></entry></feed>
+Accroding to &lt;a href="https://twitter.com/sccolbert"&gt;@sccolber&lt;/a&gt; the way to v1.0 will probably break some of the existing extensions.&lt;/p&gt;</content></entry></feed>
