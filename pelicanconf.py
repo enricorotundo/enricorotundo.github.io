@@ -4,12 +4,14 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Enrico Rotundo'
 SITENAME = 'Enrico Rotundo\' Blog'
-SITEURL = 'https://enricorotundo.github.io/'
+SITEURL = 'https://enricorotundo.github.io'
 SITELOGO =  '//avatars2.githubusercontent.com/u/4340327?s=400&u=1a4d1ea78282e967366b5c5beb0e32bd24c4236b&v=4'
 SITETITLE = AUTHOR
 SITESUBTITLE = 'Junior Data Scientist'
 
 PATH = 'content'
+
+STATIC_PATHS = ['gifs']
 
 TIMEZONE = 'Europe/Amsterdam'
 
@@ -27,16 +29,14 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-#LINKS = (('GitHub', 'https://github.com/enricorotundo'),
-#         ('LinkedIn', 'https://www.linkedin.com/in/enricorotundo/'),
-#         ('Twitter', 'https://twitter.com/EnricoRotundo')
+#LINKS = (('Posts', 'https://enricorotundo.github.io'),
 #)
 
 # Social widget
 SOCIAL = (
     ('envelope-o', 'mailto:enrico.rotundo@gmail.com'),
     ('github', 'https://github.com/enricorotundo'),
-    ('linkedin', 'https://www.linkedin.com/in/enricorotundo/'),
+    ('linkedin', 'https://www.linkedin.com/in/enricorotundo'),
     ('twitter', 'https://twitter.com/EnricoRotundo'),
     ('tumblr', 'https://enrico-rotundo.tumblr.com')
 )
@@ -47,6 +47,7 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 DISQUS_SITENAME = "https-enricorotundo-github-io"
+GOOGLE_ANALYTICS = "UA-50634042-4"
 
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike',
