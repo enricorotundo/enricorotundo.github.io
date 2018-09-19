@@ -1,3 +1,2 @@
 Publish:
-
-`make html && make github`
+just run `make github`
