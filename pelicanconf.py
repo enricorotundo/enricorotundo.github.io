@@ -7,17 +7,17 @@ SITENAME = 'Enrico Rotundo\' Blog'
 SITEURL = 'https://enricorotundo.github.io'
 SITELOGO =  '//avatars2.githubusercontent.com/u/4340327?s=400&u=1a4d1ea78282e967366b5c5beb0e32bd24c4236b&v=4'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Junior Data Scientist'
+SITESUBTITLE = 'Data Scientist'
 
 PATH = 'content'
 
-STATIC_PATHS = ['gifs']
+STATIC_PATHS = ['gifs', 'images']
 
 TIMEZONE = 'Europe/Amsterdam'
 
 DEFAULT_LANG = 'en'
 
-THEME='Flex'
+THEME='/Users/erotundo/pelican-themes/Flex'
 
 MAIN_MENU = True
 
@@ -35,10 +35,11 @@ AUTHOR_FEED_RSS = None
 # Social widget
 SOCIAL = (
     ('envelope-o', 'mailto:enrico.rotundo@gmail.com'),
+    ('medium', 'https://medium.com/@enrico.rotundo'),
     ('github', 'https://github.com/enricorotundo'),
     ('linkedin', 'https://www.linkedin.com/in/enricorotundo'),
     ('twitter', 'https://twitter.com/EnricoRotundo'),
-    ('tumblr', 'https://enrico-rotundo.tumblr.com')
+    ('tumblr', 'https://enrico-rotundo.tumblr.com'),
 )
 
 DEFAULT_PAGINATION = False
