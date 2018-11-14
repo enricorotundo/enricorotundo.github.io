@@ -11,7 +11,7 @@ SITESUBTITLE = '.: Data Scientist :.'
 
 PATH = 'content'
 
-STATIC_PATHS = ['gifs', 'images']
+STATIC_PATHS = ['gifs', 'images', 'files']
 
 TIMEZONE = 'Europe/Amsterdam'
 

@@ -10,7 +10,7 @@ Don't hesitate to get in touch for networking 🤠
 
 ## Talks
 
-* [JupyterLab & its extensions: towards a broad open source ecosystem](https://www.meetup.com/PyData-Bristol/events/255667468/) at PyData Bristol (13-11-2018)
+* [JupyterLab & its extensions: towards a broad open source ecosystem](https://www.meetup.com/PyData-Bristol/events/255667468/) at PyData Bristol (13-11-2018) - [Download slides](/files/JupyterLab%20%26%20its%20extensions%20-%20PyData%20Bristol%2C%20Nov.%202018.pdf) 5MB 
 
 ## Readings
 
