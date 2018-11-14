@@ -6,4 +6,4 @@ Juse a few commands here since I always forget them.
 Will use relative URLs
 
 ### Publish
-`make github`
+`make clean && make html && make github`

@@ -1,6 +1,7 @@
 Title: About
 Date: 2018-08-24 18:25
 Category: Generic
+URL:
 save_as: index.html
 
 [@EnricoRotundo](https://twitter.com/EnricoRotundo) is a data scientist based in Amsterdam (NL) with a background in artificial intelligence and computer science. He's currently working for HAL24K in deep learning, computer vision, inference at the edge, and to accelerate data science on cloud services. 
@@ -13,7 +14,10 @@ Don't hesitate to get in touch for networking 🤠
 
 ## Readings
 
+* [Artificial Intelligence Across Industries](https://www.oreilly.com/data/free/artificial-intelligence-across-industries.csp) by Mike Barlow
+* [Building Mobile Applications with TensorFlow](https://www.oreilly.com/data/free/building-mobile-applications-with-tensorflow.csp) by Pete Warden
+* [Data as a Feature](https://www.oreilly.com/ideas/data-as-a-feature-is-coming-are-product-managers-ready) by Alice LaPlante
+* [Serving Machine Learning Models](https://www.lightbend.com/blog/serving-machine-learning-models-free-oreilly-ebook-from-lightbend) by Boris Lublinsky
 * [Soft Skills: The software developer's life manual](https://www.oreilly.com/library/view/soft-skills-the/9781617292392/) by John Z. Sonmez
-
 
 <a class="twitter-timeline" href="https://twitter.com/EnricoRotundo?ref_src=twsrc%5Etfw">Tweets by EnricoRotundo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
