@@ -3,11 +3,11 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Enrico Rotundo'
-SITENAME = 'Enrico Rotundo\' Blog'
+SITENAME = 'Enrico Rotundo\'s Blog'
 SITEURL = 'https://enricorotundo.github.io'
 SITELOGO =  '//avatars2.githubusercontent.com/u/4340327?s=400&u=1a4d1ea78282e967366b5c5beb0e32bd24c4236b&v=4'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Data Scientist'
+SITESUBTITLE = '.: Data Scientist :.'
 
 PATH = 'content'
 
@@ -17,7 +17,7 @@ TIMEZONE = 'Europe/Amsterdam'
 
 DEFAULT_LANG = 'en'
 
-THEME='/Users/erotundo/pelican-themes/Flex'
+THEME='Flex'
 
 MAIN_MENU = True
 
@@ -29,8 +29,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-#LINKS = (('Posts', 'https://enricorotundo.github.io'),
-#)
+LINKS = (
+    ('Blog', 'https://medium.com/@enrico.rotundo'),
+)
 
 # Social widget
 SOCIAL = (
@@ -45,7 +46,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 DISQUS_SITENAME = "https-enricorotundo-github-io"
 GOOGLE_ANALYTICS = "UA-50634042-4"
