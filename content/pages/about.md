@@ -8,7 +8,7 @@ save_as: index.html
 
 Don't hesitate to get in touch for networking 🤠
 
-## Talks
+## My Talks
 
 * [JupyterLab & its extensions: towards a broad open source ecosystem](https://www.meetup.com/PyData-Bristol/events/255667468/) at PyData Bristol (13-11-2018) - [Download slides](/files/JupyterLab%20%26%20its%20extensions%20-%20PyData%20Bristol%2C%20Nov.%202018.pdf) 5MB 
 
@@ -19,5 +19,11 @@ Don't hesitate to get in touch for networking 🤠
 * [Data as a Feature](https://www.oreilly.com/ideas/data-as-a-feature-is-coming-are-product-managers-ready) by Alice LaPlante
 * [Serving Machine Learning Models](https://www.lightbend.com/blog/serving-machine-learning-models-free-oreilly-ebook-from-lightbend) by Boris Lublinsky
 * [Soft Skills: The software developer's life manual](https://www.oreilly.com/library/view/soft-skills-the/9781617292392/) by John Z. Sonmez
+
+## Podcasts
+
+* [Adversarial Learning](http://adversariallearning.com/) by Joel Grus and Andrew K Musselman
+* [DataFramed](https://www.datacamp.com/community/podcast) by Hugo Bowne-Anderson
+* [Talk Python To Me](https://talkpython.fm/) by Michael Kennedy
 
 <a class="twitter-timeline" href="https://twitter.com/EnricoRotundo?ref_src=twsrc%5Etfw">Tweets by EnricoRotundo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
