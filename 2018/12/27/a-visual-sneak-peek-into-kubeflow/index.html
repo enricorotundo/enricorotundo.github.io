@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../../../theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="../../../../theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/solid.css">
+
+    <link href="../../../../static/custom.css" rel="stylesheet">
+
+
+
+
+  
+
+
+<meta name="author" content="Enrico Rotundo" />
+<meta name="description" content="Here’s how v0.3.4 looks like, in a glimpse You have probably heard about Kubernetes. Alright. If you are in the Data Science field, you might be wondering what’s being baked for you based on K8s. Well, for 2018… that’s probably Kubeflow! Kubeflow is the machine learning toolkit for Kubernetes It provides scalable machine learning workflows, and since it relies on K8s, it promises infrastructure-free containerized services for machine learning practitioners. In other words, Kubeflow ships with the following services: JupyterHub, for the well-known Jupyter Notebooks and JupyterLab TensorFlow model training Optimized model serving, with support for NVIDIA TensorRT Pipelines to manage experiments, deployments, etc. That sounds great, finally, no more manual deployment of Jupyter and (re)-adapting those template scripts to train a bunch of models. My reaction to my first reading on Kubeflow (src: giphy.com) Thrilled by the glamorous announcements, I thought “Hey this Kubeflow sounds pretty cool, but I’d like to test it”. After I had unsuccessfully searched for screencast demos on YouTube, tutorials with explicative visuals, or step-by-step guides on what you could do with Kubeflow, I quickly realized there’s very little material out there for the final user (e.g. a data scientist like me). But… how does it look like? Running Kubeflow After I had wasted several hours on trying to run Kubeflow v0.3.4 on macOS, I found this Deploy Kubeflow on GKE using the UI to work (almost) seamlessly. All you need is a GCP account and some spare time. After all the steps, you’ll have a running instance of Kubeflow. It starts with a pretty empty UI, this is the entry point to the services listed above. View of Kubeflow v0.3.4 initial dashboard JupyterHub I had a bit of initial hustle with the JupyterHub service due to a “401: Unauthorized” error. However, after starting the server, you’ll be able to select an image for your Jupyter workspace. Note that there’s support for both CPU and GPU in all of the recent tensorflow versions. Kubeflow should be able to automagically provision GPU resources if that’s available in the cluster. The user can configure details such as CPU, GPU and RAM memory to assign to the Notebook instance. After spawning a Jupyter instance I started exploring around. It comes with 2 Python kernels pre-installed (i.e. py2 and py3). However, I was a bit disappointed about not being able to create any Notebook, nor a terminal window. It’d just fail with a cryptic “Not Found” message. Need more info? Check the jupyterhub/kubespawner docs. Tensorflow Job dashboard The TF Job dashboard is the component you can use to run TensorFlow training jobs. Since there’s K8s under the hood, I’d expect this to scale out smoothly and map the training jobs in a smart way. The UI is pretty basic here and you can create and monitor jobs, as well as managing them by namespace. Here’s how it looks like: Want more info? Check the kubeflow/tf-operator docs. Pipeline dashboard This is the place where you compose and build data pipelines, and manage running experiments. You build an ETL pipeline with visual tools. More info on kubeflow/pipelines here. Conclusions I’d have liked to say more about Kubeflow but the v0.3.4 seemed pretty unusable for me. Although v0.4.0-rc2 is already out (see announcement), I didn’t find an easy (I mean dummy proof!) way to deploy it for a quick test. It comes with all the tools you need to set up an analysis environment: Jupyter, model training scheduler, and an experiment dashboard. Once these three will be fully working, machine learning practitioners will have a scalable and flexible workbench to play with." />
+<meta name="keywords" content="">
+
+
+<meta property="og:site_name" content="Enrico Rotundo's site"/>
+<meta property="og:title" content="A (visual) sneak peek into Kubeflow"/>
+<meta property="og:description" content="Here’s how v0.3.4 looks like, in a glimpse You have probably heard about Kubernetes. Alright. If you are in the Data Science field, you might be wondering what’s being baked for you based on K8s. Well, for 2018… that’s probably Kubeflow! Kubeflow is the machine learning toolkit for Kubernetes It provides scalable machine learning workflows, and since it relies on K8s, it promises infrastructure-free containerized services for machine learning practitioners. In other words, Kubeflow ships with the following services: JupyterHub, for the well-known Jupyter Notebooks and JupyterLab TensorFlow model training Optimized model serving, with support for NVIDIA TensorRT Pipelines to manage experiments, deployments, etc. That sounds great, finally, no more manual deployment of Jupyter and (re)-adapting those template scripts to train a bunch of models. My reaction to my first reading on Kubeflow (src: giphy.com) Thrilled by the glamorous announcements, I thought “Hey this Kubeflow sounds pretty cool, but I’d like to test it”. After I had unsuccessfully searched for screencast demos on YouTube, tutorials with explicative visuals, or step-by-step guides on what you could do with Kubeflow, I quickly realized there’s very little material out there for the final user (e.g. a data scientist like me). But… how does it look like? Running Kubeflow After I had wasted several hours on trying to run Kubeflow v0.3.4 on macOS, I found this Deploy Kubeflow on GKE using the UI to work (almost) seamlessly. All you need is a GCP account and some spare time. After all the steps, you’ll have a running instance of Kubeflow. It starts with a pretty empty UI, this is the entry point to the services listed above. View of Kubeflow v0.3.4 initial dashboard JupyterHub I had a bit of initial hustle with the JupyterHub service due to a “401: Unauthorized” error. However, after starting the server, you’ll be able to select an image for your Jupyter workspace. Note that there’s support for both CPU and GPU in all of the recent tensorflow versions. Kubeflow should be able to automagically provision GPU resources if that’s available in the cluster. The user can configure details such as CPU, GPU and RAM memory to assign to the Notebook instance. After spawning a Jupyter instance I started exploring around. It comes with 2 Python kernels pre-installed (i.e. py2 and py3). However, I was a bit disappointed about not being able to create any Notebook, nor a terminal window. It’d just fail with a cryptic “Not Found” message. Need more info? Check the jupyterhub/kubespawner docs. Tensorflow Job dashboard The TF Job dashboard is the component you can use to run TensorFlow training jobs. Since there’s K8s under the hood, I’d expect this to scale out smoothly and map the training jobs in a smart way. The UI is pretty basic here and you can create and monitor jobs, as well as managing them by namespace. Here’s how it looks like: Want more info? Check the kubeflow/tf-operator docs. Pipeline dashboard This is the place where you compose and build data pipelines, and manage running experiments. You build an ETL pipeline with visual tools. More info on kubeflow/pipelines here. Conclusions I’d have liked to say more about Kubeflow but the v0.3.4 seemed pretty unusable for me. Although v0.4.0-rc2 is already out (see announcement), I didn’t find an easy (I mean dummy proof!) way to deploy it for a quick test. It comes with all the tools you need to set up an analysis environment: Jupyter, model training scheduler, and an experiment dashboard. Once these three will be fully working, machine learning practitioners will have a scalable and flexible workbench to play with."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../../../../2018/12/27/a-visual-sneak-peek-into-kubeflow/"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-12-27 18:30:00+01:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="../../../../author/enrico-rotundo.html">
+<meta property="article:section" content="Generic"/>
+<meta property="og:image" content="/images/avatar-2020-09-04-13-55-45.jpg">
+
+  <title>Enrico Rotundo's site &ndash; A (visual) sneak peek into Kubeflow</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="../../../..">
+        <img src="/images/avatar-2020-09-04-13-55-45.jpg" alt="Enrico" title="Enrico">
+      </a>
+
+      <h1>
+        <a href="../../../..">Enrico</a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="../../../../#about">
+                  About
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="/blog" >Blog</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-envelope" href="mailto:enricoDOTrotundoATgmailDOTcom" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/enricorotundo" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/EnricoRotundo" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="a-visual-sneak-peek-into-kubeflow">A (visual) sneak peek into Kubeflow</h1>
+    <p>
+      Posted on Thu 27 December 2018 in <a href="../../../../category/generic.html">Generic</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Here’s how v0.3.4 looks like, in a glimpse</p>
+<p><img alt="Kubeflow logo" src="https://miro.medium.com/proxy/1*KfCJV5Ts8qaTKgHq1yTcqQ.png"></p>
+<p>You have probably heard about <a href="https://kubernetes.io/">Kubernetes</a>. Alright. If you are in the Data Science field, you might be wondering what’s being baked for you based on K8s. Well, for 2018… that’s probably <a href="https://www.kubeflow.org/">Kubeflow</a>!</p>
+<blockquote>
+<p>Kubeflow is <em>the machine learning toolkit for Kubernetes</em></p>
+</blockquote>
+<p>It provides scalable machine learning workflows, and since it relies on K8s, it promises infrastructure-free containerized services for machine learning practitioners. In other words, Kubeflow ships with the following services:</p>
+<ul>
+<li>
+<p>JupyterHub, for the well-known Jupyter Notebooks and JupyterLab</p>
+</li>
+<li>
+<p>TensorFlow model training</p>
+</li>
+<li>
+<p>Optimized model serving, with support for NVIDIA TensorRT</p>
+</li>
+<li>
+<p>Pipelines to manage experiments, deployments, etc.</p>
+</li>
+</ul>
+<p>That sounds great, finally, no more manual deployment of Jupyter and (re)-adapting those template scripts to train a bunch of models.</p>
+<p><img alt="My reaction to my first reading on Kubeflow (src: giphy.com)" src="https://cdn-images-1.medium.com/max/2000/0*bM_MiV_BE_uXoEP1"></p>
+<p><em>My reaction to my first reading on Kubeflow (src: giphy.com)</em></p>
+<p>Thrilled by the glamorous <a href="https://medium.com/kubeflow/kubeflow-0-4-release-update-whats-coming-c55820e28915">announcements</a>, I thought “Hey this Kubeflow sounds pretty cool, but I’d like to test it”. After I had unsuccessfully searched for screencast demos on YouTube, tutorials with explicative visuals, or step-by-step guides on what you could do with Kubeflow, I quickly realized there’s very little material out there for the final user (e.g. a data scientist like me).</p>
+<blockquote>
+<h1>But… how does it look like?</h1>
+</blockquote>
+<h2>Running Kubeflow</h2>
+<p>After I had wasted several hours on trying to run Kubeflow v0.3.4 on macOS, I found this <a href="https://www.kubeflow.org/docs/started/getting-started-gke/">Deploy Kubeflow on GKE using the UI</a> to work (almost) seamlessly. All you need is a GCP account and some spare time. After all the steps, you’ll have a running instance of Kubeflow. It starts with a pretty empty UI, this is the entry point to the services listed above.</p>
+<p><img alt="View of Kubeflow v0.3.4 initial dashboard" src="https://cdn-images-1.medium.com/max/2650/1*VyDhM6zobiEliMX1wPlmFw.png"><em>View of Kubeflow v0.3.4 initial dashboard</em></p>
+<h2>JupyterHub</h2>
+<p>I had a bit of initial hustle with the JupyterHub service due to a “401: Unauthorized” error. However, after starting the server, you’ll be able to select an image for your Jupyter workspace. Note that there’s support for both CPU and GPU in all of the recent tensorflow versions. Kubeflow should be able to automagically provision GPU resources if that’s available in the cluster.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*qZU-3B94hfBD3wrIXdRY_w.png"></p>
+<p>The user can configure details such as CPU, GPU and RAM memory to assign to the Notebook instance.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2000/1*aMUtX7kj7E1g0aH64ZkT1A.png"></p>
+<p>After spawning a Jupyter instance I started exploring around. It comes with 2 Python kernels pre-installed (i.e. py2 and py3). However, I was a bit disappointed about not being able to create any Notebook, nor a terminal window. It’d just fail with a cryptic “Not Found” message.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*SMVOTIQF1ZYuO0BKYVmqLA.png"></p>
+<p>Need more info? Check the <a href="https://github.com/jupyterhub/kubespawner">jupyterhub/kubespawner docs</a>.</p>
+<h2>Tensorflow Job dashboard</h2>
+<p>The TF Job dashboard is the component you can use to run TensorFlow training jobs. Since there’s K8s under the hood, I’d expect this to scale out smoothly and map the training jobs in a smart way. The UI is pretty basic here and you can create and monitor jobs, as well as managing them by namespace. Here’s how it looks like:</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*PWY_27oppG558n9jpcRTgg.png"></p>
+<p>Want more info? Check the <a href="https://github.com/kubeflow/tf-operator">kubeflow/tf-operator docs</a>.</p>
+<h2>Pipeline dashboard</h2>
+<p>This is the place where you compose and build data pipelines, and manage running experiments. You build an ETL pipeline with visual tools.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*I00jHRPkpXqh8rMOCsI7fA.png"></p>
+<p>More info on <a href="https://github.com/kubeflow/pipelines">kubeflow/pipelines here</a>.</p>
+<h2>Conclusions</h2>
+<p>I’d have liked to say more about Kubeflow but the v0.3.4 seemed pretty unusable for me. Although <a href="https://github.com/kubeflow/kubeflow/releases">v0.4.0-rc2</a> is already out (<a href="https://medium.com/kubeflow/kubeflow-0-4-release-update-whats-coming-c55820e28915">see announcement</a>), I didn’t find an easy (I mean dummy proof!) way to deploy it for a quick test. It comes with all the tools you need to set up an analysis environment: Jupyter, model training scheduler, and an experiment dashboard. Once these three will be fully working, machine learning practitioners will have a scalable and flexible workbench to play with.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Enrico Rotundo's site ",
+  "url" : "../../../..",
+  "image": "/images/avatar-2020-09-04-13-55-45.jpg",
+  "description": "Enrico's Thoughts"
+}
+</script>
+
+
+</body>
+</html>
