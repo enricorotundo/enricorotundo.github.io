@@ -1,25 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Enrico Rotundo'
-SITENAME = 'Enrico Rotundo\'s Blog'
-SITEURL = 'https://enricorotundo.github.io'
-SITELOGO =  '//avatars2.githubusercontent.com/u/4340327?s=400&u=1a4d1ea78282e967366b5c5beb0e32bd24c4236b&v=4'
-SITETITLE = AUTHOR
-SITESUBTITLE = '.: Data Scientist :.'
+SITENAME = "Enrico Rotundo's site"
+SITEURL = 'https://www.enricorotundo.com'
+SITELOGO = '/images/avatar-2020-09-04-13-55-45.jpg'
+SITETITLE = 'Enrico'
+SITESUBTITLE = ''
+SITEDESCRIPTION = "Enrico's Thoughts"
+
+ROBOTS = "index, follow"
+
+THEME = "Flex"
+STATIC_PATHS = ['gifs', 'images', 'files', 'static']
+
+EXTRA_PATH_METADATA = {
+    "extra/custom.css": {"path": "static/custom.css"},
+}
+CUSTOM_CSS = "static/custom.css"
 
 PATH = 'content'
 
-STATIC_PATHS = ['gifs', 'images', 'files']
-
-TIMEZONE = 'Europe/Amsterdam'
+TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'en'
 
-THEME='Flex'
+MAIN_MENU = False
 
-MAIN_MENU = True
+SUMMARY_MAX_LENGTH = 2250
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -30,31 +38,34 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Blog', 'https://medium.com/@enrico.rotundo'),
+    ('Blog', '/blog'),
 )
+
+# create blog index page at /blog
+INDEX_SAVE_AS = "blog.html"
 
 # Social widget
 SOCIAL = (
-    ('envelope-o', 'mailto:enrico.rotundo@gmail.com'),
-    ('medium', 'https://medium.com/@enrico.rotundo'),
-    ('github', 'https://github.com/enricorotundo'),
+    ('envelope', 'mailto:enricoDOTrotundoATgmailDOTcom'),
     ('linkedin', 'https://www.linkedin.com/in/enricorotundo'),
     ('twitter', 'https://twitter.com/EnricoRotundo'),
-    ('tumblr', 'https://enrico-rotundo.tumblr.com'),
 )
 
 DEFAULT_PAGINATION = False
 
+# Delete the output directory, and all of its contents, before generating new files. This can be useful in preventing older, unnecessary files from persisting in your output. However, this is a destructive setting and should be handled with extreme care.
+DELETE_OUTPUT_DIRECTORY = True
+
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-DISQUS_SITENAME = "https-enricorotundo-github-io"
-GOOGLE_ANALYTICS = "UA-50634042-4"
 
-CC_LICENSE = {
-    'name': 'Creative Commons Attribution-ShareAlike',
-    'version': '4.0',
-    'slug': 'by-sa'
-}
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_ORDER_BY = 'reversed-date'
 
-COPYRIGHT_YEAR = 2018
+
+COPYRIGHT_YEAR = 2021
+
+
+
