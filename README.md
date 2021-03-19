@@ -27,10 +27,7 @@ pelican --listen --autoreload
 From `source` branch:
 
 ```
-git commit -am "up"
-pelican content -o output -s pelicanconf.py
-ghp-import --branch=master output
-git push origin master
+git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push
 ```
 
 Give it a few seconds + use Incogito.
