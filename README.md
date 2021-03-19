@@ -23,3 +23,13 @@ pelican --listen --autoreload
 
 
 ### Publish
+```
+# from `source` branch
+git add .
+git commit -m "up"
+pelican content -o output -s pelicanconf.py
+ghp-import --branch='master' output
+git checkout master
+git pull
+git push origin master
+```
