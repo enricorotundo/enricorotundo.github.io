@@ -4,7 +4,7 @@
 AUTHOR = 'Enrico Rotundo'
 SITENAME = "Enrico Rotundo's site"
 SITEURL = 'https://www.enricorotundo.com'
-SITELOGO = '/images/avatar-2020-09-04-13-55-45.jpg'
+SITELOGO = '/images/avatar.jpg'
 SITETITLE = 'Enrico'
 SITESUBTITLE = ''
 SITEDESCRIPTION = "Enrico's Thoughts"
