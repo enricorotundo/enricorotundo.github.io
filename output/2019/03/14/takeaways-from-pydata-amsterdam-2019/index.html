@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../../../theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="../../../../theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../../../../theme/font-awesome/css/solid.css">
+
+    <link href="../../../../static/custom.css" rel="stylesheet">
+
+
+
+
+  
+
+
+<meta name="author" content="Enrico Rotundo" />
+<meta name="description" content="Written by Enrico Rotundo &amp; Michael Chong. PyData Amsterdam 2019 it’s a wrap. It has been an amazing two days conference (plus one of workshops) where experts and users of data analytics tools shared their research, approaches and mistakes in a friendly and inclusive environment. In this post, we present some takeaways from the conference, and a few reasons why you should consider going the next time. Our favourite talks Generally speaking, the level of the talks was very good, with a mix of experienced presenters and novices, professional entertainers and hardcore technical experts. Amongst several very good talks, these were our favourites: The Profession of Solving (the Wrong Problem), by Vincent D. Warmerdam (GoDataDriven) Vincent is an entertaining speaker, his talk was fun, spot on in describing mistakes we all make, and very helpful in putting some things in perspective. Through a few examples he illustrated how we can get stuck because we look at the wrong thing or we approach it the wrong way, and often enough we are so much focused on the details of the technology we are using that we forget about the problem itself. By changing perspective you can often get to a solution that seemed impossible before. People dreamt about the solution. Not the problem. There are a few practical ways to help you changing perspective when stuck, and some good practices you should adopt always. These include focusing on the problem, rather than on the solution or on the algorithm; talking with your client again and again, understand his pain points and needs; set up a pipeline such that you can evaluate the impact of anything, before implementing the solution. Oh, and don’t forget to “go to your local theatre, there are some AMAZING things happening on stage” Online machine learning with creme by Max Halford (Université Paul Sabatier, Toulouse) Max had this entertaining presentation full of memes and pop references, on a topic we don’t discuss often: doing machine learning on data streams. We are so used to think of machine learning as a batch problem — that we often forget that real data often is generated sequentially. He presented Creme (from inCREMEntal learning), a python library to do online machine learning, a regime where the model learns one observation at a time. This enables rapid-deployment, right after the 1st data point comes in 🤠, as well as a low-memory footprint (doesn’t need to load the whole dataset into memory). The library is quite young, however the core team seems very enthusiastic and committed. They need feedback on real-life use cases (i.e. real streaming data), to drive the development of the library (yes, things go wrong in real scenarios). If you are a bit confused about the usefulness of the approach, don’t worry. We are as well. What is clear is that we are very much used to the batch approach that seldom we question it. To better understand all the implications of doing online learning, we will for sure try Creme as soon as we have a chance to do so. Sebenz.ai — South African job creation through gamified data labeling for machine learning by Alex Conway (Sebenz.ai) Alex’s talk was the most colourful of the two days both literally and in a figurative way. He presented Sebenz.ai, a way to label your data by making people play a sort of game on their smartphones (and get paid). If this sounds similar to a Mechanical Turk, it is because it kind of is. But AWS’s tool is quite old, and there is nothing bad in getting out of a sort of monopoly. Generally we are very much concerned with the amount of data, and we might overlook the quality of data, which is scarce and precious. And properly labelled data is even rarer. Ask for a price quotation to buy annotated images if you don’t believe it. As Alex loves to put it: if you are paying a data scientist with a PhD to label your data you are not making a good deal Not all the data is like oil. Having an alternative tool to label your images, or to transcribe your audio notes, by a company that promise to ensure at least minimum wage retribution and that tries to give jobs in a country with high levels of unemployment, can’t do any harm. Ethics and inclusion awareness is rising The fact that inclusion, diversity and ethics have become a central topic is clear from the fact that the first keynote, an excellent presentation by Sasha Romijn, was about the need of empathy in our communities and products. Sasha highlighted unintentional non-inclusive behaviours we may have, and the fact that until we experience being discriminated against, it is very difficult to realise the complexity of it! A thing that blew our mind was the realisation that when we make our product accessible to people with disabilities we may accidentally make it available for a set of people that we did not think about, as illustrated here Speaking of discrimination, we were happy to see that PyData adopted a code of conduct and made sure to share it with all the participants both online and in the goodies bag. Interestingly enough, several times during the conference questions were asked about the ethical consequences of a solution or of a project, stimulating debate and awareness. Finally, in at least a couple of talks the topic of filter bubbles was touched and the talk by Sanne Vrijenhoek was focused on how to measure diversity in news recommendations. You’ll meet cool people Such as core developers of open-source packages you use every day, such as Ralf Gommers (SciPy, NumPy) and Carlos Córdoba (Spyder) Conclusions Attending this conference was a remarkable experience. Whether you’re a techie or a business savvy you’ll get valid takeaways from the community. And it’s not all! Don’t forget to follow PyData Amsterdam’s meetup page to stay posted on the monthly meetups. Acknowledgments: we want to thank for giving us the possibility to attend this event. Also, we’d like to thank all the people who worked to make PyData Amsterdam 2019 such a successful events, the Organizing Committee, the volunteers, the speakers andNumFOCUS. Originally published at https://medium.com on May 14, 2019." />
+<meta name="keywords" content="">
+
+
+<meta property="og:site_name" content="Enrico Rotundo's site"/>
+<meta property="og:title" content="Takeaways from PyData Amsterdam 2019"/>
+<meta property="og:description" content="Written by Enrico Rotundo &amp; Michael Chong. PyData Amsterdam 2019 it’s a wrap. It has been an amazing two days conference (plus one of workshops) where experts and users of data analytics tools shared their research, approaches and mistakes in a friendly and inclusive environment. In this post, we present some takeaways from the conference, and a few reasons why you should consider going the next time. Our favourite talks Generally speaking, the level of the talks was very good, with a mix of experienced presenters and novices, professional entertainers and hardcore technical experts. Amongst several very good talks, these were our favourites: The Profession of Solving (the Wrong Problem), by Vincent D. Warmerdam (GoDataDriven) Vincent is an entertaining speaker, his talk was fun, spot on in describing mistakes we all make, and very helpful in putting some things in perspective. Through a few examples he illustrated how we can get stuck because we look at the wrong thing or we approach it the wrong way, and often enough we are so much focused on the details of the technology we are using that we forget about the problem itself. By changing perspective you can often get to a solution that seemed impossible before. People dreamt about the solution. Not the problem. There are a few practical ways to help you changing perspective when stuck, and some good practices you should adopt always. These include focusing on the problem, rather than on the solution or on the algorithm; talking with your client again and again, understand his pain points and needs; set up a pipeline such that you can evaluate the impact of anything, before implementing the solution. Oh, and don’t forget to “go to your local theatre, there are some AMAZING things happening on stage” Online machine learning with creme by Max Halford (Université Paul Sabatier, Toulouse) Max had this entertaining presentation full of memes and pop references, on a topic we don’t discuss often: doing machine learning on data streams. We are so used to think of machine learning as a batch problem — that we often forget that real data often is generated sequentially. He presented Creme (from inCREMEntal learning), a python library to do online machine learning, a regime where the model learns one observation at a time. This enables rapid-deployment, right after the 1st data point comes in 🤠, as well as a low-memory footprint (doesn’t need to load the whole dataset into memory). The library is quite young, however the core team seems very enthusiastic and committed. They need feedback on real-life use cases (i.e. real streaming data), to drive the development of the library (yes, things go wrong in real scenarios). If you are a bit confused about the usefulness of the approach, don’t worry. We are as well. What is clear is that we are very much used to the batch approach that seldom we question it. To better understand all the implications of doing online learning, we will for sure try Creme as soon as we have a chance to do so. Sebenz.ai — South African job creation through gamified data labeling for machine learning by Alex Conway (Sebenz.ai) Alex’s talk was the most colourful of the two days both literally and in a figurative way. He presented Sebenz.ai, a way to label your data by making people play a sort of game on their smartphones (and get paid). If this sounds similar to a Mechanical Turk, it is because it kind of is. But AWS’s tool is quite old, and there is nothing bad in getting out of a sort of monopoly. Generally we are very much concerned with the amount of data, and we might overlook the quality of data, which is scarce and precious. And properly labelled data is even rarer. Ask for a price quotation to buy annotated images if you don’t believe it. As Alex loves to put it: if you are paying a data scientist with a PhD to label your data you are not making a good deal Not all the data is like oil. Having an alternative tool to label your images, or to transcribe your audio notes, by a company that promise to ensure at least minimum wage retribution and that tries to give jobs in a country with high levels of unemployment, can’t do any harm. Ethics and inclusion awareness is rising The fact that inclusion, diversity and ethics have become a central topic is clear from the fact that the first keynote, an excellent presentation by Sasha Romijn, was about the need of empathy in our communities and products. Sasha highlighted unintentional non-inclusive behaviours we may have, and the fact that until we experience being discriminated against, it is very difficult to realise the complexity of it! A thing that blew our mind was the realisation that when we make our product accessible to people with disabilities we may accidentally make it available for a set of people that we did not think about, as illustrated here Speaking of discrimination, we were happy to see that PyData adopted a code of conduct and made sure to share it with all the participants both online and in the goodies bag. Interestingly enough, several times during the conference questions were asked about the ethical consequences of a solution or of a project, stimulating debate and awareness. Finally, in at least a couple of talks the topic of filter bubbles was touched and the talk by Sanne Vrijenhoek was focused on how to measure diversity in news recommendations. You’ll meet cool people Such as core developers of open-source packages you use every day, such as Ralf Gommers (SciPy, NumPy) and Carlos Córdoba (Spyder) Conclusions Attending this conference was a remarkable experience. Whether you’re a techie or a business savvy you’ll get valid takeaways from the community. And it’s not all! Don’t forget to follow PyData Amsterdam’s meetup page to stay posted on the monthly meetups. Acknowledgments: we want to thank for giving us the possibility to attend this event. Also, we’d like to thank all the people who worked to make PyData Amsterdam 2019 such a successful events, the Organizing Committee, the volunteers, the speakers andNumFOCUS. Originally published at https://medium.com on May 14, 2019."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../../../../2019/03/14/takeaways-from-pydata-amsterdam-2019/"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-03-14 18:25:00+01:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="../../../../author/enrico-rotundo.html">
+<meta property="article:section" content="Generic"/>
+<meta property="og:image" content="/images/avatar.jpg">
+
+  <title>Enrico Rotundo's site &ndash; Takeaways from PyData Amsterdam 2019</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="../../../..">
+        <img src="/images/avatar.jpg" alt="Enrico" title="Enrico">
+      </a>
+
+      <h1>
+        <a href="../../../..">Enrico</a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="../../../../#about">
+                  About
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="/blog" >Blog</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-envelope" href="mailto:enricoDOTrotundoATgmailDOTcom" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/enricorotundo" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/EnricoRotundo" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="takeaways-from-pydata-amsterdam-2019">Takeaways from PyData Amsterdam 2019</h1>
+    <p>
+      Posted on Thu 14 March 2019 in <a href="../../../../category/generic.html">Generic</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Written by Enrico Rotundo &amp; <a href="https://medium.com/@michael.chong.bo">Michael Chong</a>.</p>
+<p><a href="https://pydata.org/amsterdam2019/">PyData Amsterdam 2019</a> it’s a wrap. It has been an amazing two days conference (plus one of workshops) where experts and users of data analytics tools shared their research, approaches and mistakes in a friendly and inclusive environment.</p>
+<p>In this post, we present some takeaways from the conference, and a few reasons why you should consider going the next time.</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*qzL8W-fedBh8igRi8fwtJQ.png"></p>
+<h2>Our favourite talks</h2>
+<p>Generally speaking, the level of the talks was very good, with a mix of experienced presenters and novices, professional entertainers and hardcore technical experts. Amongst several very good talks, these were our favourites:</p>
+<p><strong>The Profession of Solving (the Wrong Problem)</strong>, by <a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a> (GoDataDriven)
+Vincent is an entertaining speaker, his talk was fun, spot on in describing mistakes we all make, and very helpful in putting some things in perspective. Through a few examples he illustrated how we can get stuck because we look at the wrong thing or we approach it the wrong way, and often enough we are so much focused on the details of the technology we are using that we forget about the problem itself. By changing perspective you can often get to a solution that seemed impossible before.</p>
+<blockquote>
+<p><em>People dreamt about the solution. Not the problem.</em></p>
+</blockquote>
+<p>There are a few practical ways to help you changing perspective when stuck, and some good practices you should adopt always. These include focusing on the problem, rather than on the solution or on the algorithm; talking with your client again and again, understand his pain points and needs; set up a pipeline such that you can evaluate the impact of anything, before implementing the solution. Oh, and don’t forget to “go to your local theatre, there are some AMAZING things happening on stage”</p>
+<p><strong>Online machine learning with creme</strong> by <a href="https://medium.com/@maxhalford25">Max Halford</a> (Université Paul Sabatier, Toulouse)
+Max had this entertaining presentation full of memes and pop references, on a topic we don’t discuss often: doing machine learning on data streams. We are so used to think of machine learning as a batch problem — that we often forget that real data often is generated sequentially. He presented <a href="https://github.com/creme-ml/creme">Creme</a> (from inCREMEntal learning), a python library to do <a href="https://en.wikipedia.org/wiki/Online_machine_learning">online machine learning</a>, a regime where the model learns one observation at a time. This enables rapid-deployment, right after the 1st data point comes in 🤠, as well as a low-memory footprint (doesn’t need to load the whole dataset into memory).</p>
+<p>The library is quite young, however the core team seems very enthusiastic and committed. They need feedback on real-life use cases (i.e. real streaming data), to drive the development of the library (yes, things go wrong in real scenarios). 
+If you are a bit confused about the usefulness of the approach, don’t worry. We are as well. What is clear is that we are very much used to the batch approach that seldom we question it. To better understand all the implications of doing online learning, we will for sure try Creme as soon as we have a chance to do so.</p>
+<p><strong>Sebenz.ai — South African job creation through gamified data labeling for machine learning</strong> by Alex Conway (Sebenz.ai)
+Alex’s talk was the most colourful of the two days both literally and in a figurative way. He presented <a href="https://sebenz.ai/">Sebenz.ai</a>, a way to label your data by making people play a sort of game on their smartphones (and get paid). If this sounds similar to a Mechanical Turk, it is because it kind of is. But AWS’s tool is quite old, and there is nothing bad in getting out of a sort of monopoly.</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*6VnrVGqR3OZmxYfpmAA0gQ.jpeg"></p>
+<p>Generally we are very much concerned with the <em>amount</em> of data, and we might overlook the <em>quality</em> of data, which is scarce and precious. And properly labelled data is even rarer. Ask for a price quotation to buy annotated images if you don’t believe it. As Alex loves to put it:</p>
+<blockquote>
+<p><em>if you are paying a data scientist with a PhD to label your data you are not making a good deal</em></p>
+</blockquote>
+<p>Not all the data is like oil. Having an alternative tool to label your images, or to transcribe your audio notes, by a company that promise to ensure at least minimum wage retribution and that tries to give jobs in a country with high levels of unemployment, can’t do any harm.</p>
+<h2>Ethics and inclusion awareness is rising</h2>
+<p>The fact that inclusion, diversity and ethics have become a central topic is clear from the fact that the first <a href="https://pydata.org/amsterdam2019/schedule/presentation/37/">keynote</a>, an excellent presentation by <a href="https://medium.com/@mxsash">Sasha Romijn</a>, was about the need of empathy in our communities and products. Sasha highlighted unintentional non-inclusive behaviours we may have, and the fact that until we experience being discriminated against, it is very difficult to realise the complexity of it! A thing that blew our mind was the realisation that when we make our product accessible to people with disabilities we may accidentally make it available for a set of people that we did not think about, as illustrated here</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*7WMtVnHdXFFXeEXG3bZwGw.jpeg"></p>
+<p>Speaking of discrimination, we were happy to see that PyData adopted a code of conduct and made sure to share it with all the participants both online and in the goodies bag.</p>
+<p>Interestingly enough, several times during the conference questions were asked about the ethical consequences of a solution or of a project, stimulating debate and awareness.</p>
+<p>Finally, in at least a couple of talks the topic of filter bubbles was touched and <a href="https://pydata.org/amsterdam2019/schedule/presentation/15/">the talk</a> by Sanne Vrijenhoek was focused on how to measure diversity in news recommendations.</p>
+<h2>You’ll meet cool people</h2>
+<p>Such as core developers of open-source packages you use every day, such as Ralf Gommers (SciPy, NumPy) and <a href="https://twitter.com/ccordoba12">Carlos Córdoba</a> (Spyder)</p>
+<h2>Conclusions</h2>
+<p>Attending this conference was a remarkable experience. Whether you’re a techie or a business savvy you’ll get valid takeaways from the community. And it’s not all! Don’t forget to follow <a href="https://www.meetup.com/PyData-NL/">PyData Amsterdam’s meetup</a> page to stay posted on the monthly meetups.</p>
+<p><em>Acknowledgments: we want to thank for giving us the possibility to attend this event. Also, we’d like to thank all the people who worked to make PyData Amsterdam 2019 such a successful events, the Organizing Committee, the volunteers, the speakers </em>andNumFOCUS.</p>
+<p><em>Originally published at <a href="https://medium.com/@michael.chong.bo/https-medium-com-michael-chong-bo-takeaways-from-pydata-amsterdam-2019-cbc7b6ddc78c">https://medium.com</a> on May 14, 2019.</em></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Enrico Rotundo's site ",
+  "url" : "../../../..",
+  "image": "/images/avatar.jpg",
+  "description": "Enrico's Thoughts"
+}
+</script>
+
+</body>
+</html>

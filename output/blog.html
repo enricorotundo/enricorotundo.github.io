@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="./theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/solid.css">
+
+    <link href="./static/custom.css" rel="stylesheet">
+
+
+
+
+  
+
+
+    <meta name="author" content="Enrico Rotundo" />
+    <meta name="description" content="Enrico's Thoughts" />
+<meta property="og:site_name" content="Enrico Rotundo's site"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Enrico Rotundo's site"/>
+<meta property="og:description" content="Enrico's Thoughts"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="."/>
+<meta property="og:image" content="/images/avatar.jpg">
+
+  <title>Enrico Rotundo's site</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href=".">
+        <img src="/images/avatar.jpg" alt="Enrico" title="Enrico">
+      </a>
+
+      <h1>
+        <a href=".">Enrico</a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="./#about">
+                  About
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="/blog" >Blog</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-envelope" href="mailto:enricoDOTrotundoATgmailDOTcom" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/enricorotundo" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/EnricoRotundo" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+
+
+<article>
+  <header>
+    <h2><a href="./2019/03/14/takeaways-from-pydata-amsterdam-2019/#takeaways-from-pydata-amsterdam-2019">Takeaways from PyData Amsterdam 2019</a></h2>
+    <p>
+      Posted on Thu 14 March 2019 in <a href="./category/generic.html">Generic</a>
+
+
+    </p>
+  </header>
+  <div>
+      <p>Written by Enrico Rotundo &amp; <a href="https://medium.com/@michael.chong.bo">Michael Chong</a>.</p>
+<p><a href="https://pydata.org/amsterdam2019/">PyData Amsterdam 2019</a> it’s a wrap. It has been an amazing two days conference (plus one of workshops) where experts and users of data analytics tools shared their research, approaches and mistakes in a friendly and inclusive environment.</p>
+<p>In this post, we present some takeaways from the conference, and a few reasons why you should consider going the next time.</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*qzL8W-fedBh8igRi8fwtJQ.png"></p>
+<h2>Our favourite talks</h2>
+<p>Generally speaking, the level of the talks was very good, with a mix of experienced presenters and novices, professional entertainers and hardcore technical experts. Amongst several very good talks, these were our favourites:</p>
+<p><strong>The Profession of Solving (the Wrong Problem)</strong>, by <a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a> (GoDataDriven)
+Vincent is an entertaining speaker, his talk was fun, spot on in describing mistakes we all make, and very helpful in putting some things in perspective. Through a few examples he illustrated how we can get stuck because we look at the wrong thing or we approach it the wrong way, and often enough we are so much focused on the details of the technology we are using that we forget about the problem itself. By changing perspective you can often get to a solution that seemed impossible before.</p>
+<blockquote>
+<p><em>People dreamt about the solution. Not the problem.</em></p>
+</blockquote>
+<p>There are a few practical ways to help you changing perspective when stuck, and some good practices you should adopt always. These include focusing on the problem, rather than on the solution or on the algorithm; talking with your client again and again, understand his pain points and needs; set up a pipeline such that you can evaluate the impact of anything, before implementing the solution. Oh, and don’t forget to “go to your local theatre, there are some AMAZING things happening on stage”</p>
+<p><strong>Online machine learning with creme</strong> by <a href="https://medium.com/@maxhalford25">Max Halford</a> (Université Paul Sabatier, Toulouse)
+Max had this entertaining presentation full of memes and pop references, on a topic we don’t discuss often: doing machine learning on data streams. We are so used to think of machine learning as a batch problem — that we often forget that real data often is generated sequentially. He presented <a href="https://github.com/creme-ml/creme">Creme</a> (from inCREMEntal learning), a python library to do <a href="https://en.wikipedia.org/wiki/Online_machine_learning">online machine learning</a>, a regime where the model learns one observation at a time. This enables rapid-deployment, right after the 1st data point comes in 🤠, as well as a low-memory footprint (doesn’t need to load the whole dataset into memory).</p>
+<p>The library is quite young, however the core team seems very enthusiastic and committed. They need feedback on real-life use cases (i.e. real streaming data), to drive the development of the library (yes, things go wrong in real scenarios). 
+If you are a bit confused about the usefulness of the approach, don’t worry. We are as well. What is clear is that we are very much used to the batch approach that seldom we question it. To better understand all the implications of doing online learning, we will for sure try Creme as soon as we have a chance to do so.</p>
+<p><strong>Sebenz.ai — South African job creation through gamified data labeling for machine learning</strong> by Alex Conway (Sebenz.ai)
+Alex’s talk was the most colourful of the two days both literally and in a figurative way. He presented <a href="https://sebenz.ai/">Sebenz.ai</a>, a way to label your data by making people play a sort of game on their smartphones (and get paid). If this sounds similar to a Mechanical Turk, it is because it kind of is. But AWS’s tool is quite old, and there is nothing bad in getting out of a sort of monopoly.</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*6VnrVGqR3OZmxYfpmAA0gQ.jpeg"></p>
+<p>Generally we are very much concerned with the <em>amount</em> of data, and we might overlook the <em>quality</em> of data, which is scarce and precious. And properly labelled data is even rarer. Ask for a price quotation to buy annotated images if you don’t believe it. As Alex loves to put it:</p>
+<blockquote>
+<p><em>if you are paying a data scientist with a PhD to label your data you are not making a good deal</em></p>
+</blockquote>
+<p>Not all the data is like oil. Having an alternative tool to label your images, or to transcribe your audio notes, by a company that promise to ensure at least minimum wage retribution and that tries to give jobs in a country with high levels of unemployment, can’t do any harm.</p>
+<h2>Ethics and inclusion awareness is rising</h2>
+<p>The fact that inclusion, diversity and ethics have become a central topic is clear from the fact that the first <a href="https://pydata.org/amsterdam2019/schedule/presentation/37/">keynote</a>, an excellent presentation by <a href="https://medium.com/@mxsash">Sasha Romijn</a>, was about the need of empathy in our communities and products. Sasha highlighted unintentional non-inclusive behaviours we may have, and the fact that until we experience being discriminated against, it is very difficult to realise the complexity of it! A thing that blew our mind was the realisation that when we make our product accessible to people with disabilities we may accidentally make it available for a set of people that we did not think about, as illustrated here</p>
+<p><img alt="" src="https://miro.medium.com/proxy/1*7WMtVnHdXFFXeEXG3bZwGw.jpeg"></p>
+<p>Speaking of discrimination, we were happy to see that PyData adopted a code of conduct and made sure to share it with all the participants both online and in the goodies bag.</p>
+<p>Interestingly enough, several times during the conference questions were asked about the ethical consequences of a solution or of a project, stimulating debate and awareness.</p>
+<p>Finally, in at least a couple of talks the topic of filter bubbles was touched and <a href="https://pydata.org/amsterdam2019/schedule/presentation/15/">the talk</a> by Sanne Vrijenhoek was focused on how to measure diversity in news recommendations.</p>
+<h2>You’ll meet cool people</h2>
+<p>Such as core developers of open-source packages you use every day, such as Ralf Gommers (SciPy, NumPy) and <a href="https://twitter.com/ccordoba12">Carlos Córdoba</a> (Spyder)</p>
+<h2>Conclusions</h2>
+<p>Attending this conference was a remarkable experience. Whether you’re a techie or a business savvy you’ll get valid takeaways from the community. And it’s not all! Don’t forget to follow <a href="https://www.meetup.com/PyData-NL/">PyData Amsterdam’s meetup</a> page to stay posted on the monthly meetups.</p>
+<p><em>Acknowledgments: we want to thank for giving us the possibility to attend this event. Also, we’d like to thank all the people who worked to make PyData Amsterdam 2019 such a successful events, the Organizing Committee, the volunteers, the speakers </em>andNumFOCUS.</p>
+<p><em>Originally published at <a href="https://medium.com/@michael.chong.bo/https-medium-com-michael-chong-bo-takeaways-from-pydata-amsterdam-2019-cbc7b6ddc78c">https://medium.com</a> on May 14, 2019.</em></p>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./2018/12/27/a-visual-sneak-peek-into-kubeflow/#a-visual-sneak-peek-into-kubeflow">A (visual) sneak peek into Kubeflow</a></h2>
+    <p>
+      Posted on Thu 27 December 2018 in <a href="./category/generic.html">Generic</a>
+
+
+    </p>
+  </header>
+  <div>
+      <p>Here’s how v0.3.4 looks like, in a glimpse</p>
+<p><img alt="Kubeflow logo" src="https://miro.medium.com/proxy/1*KfCJV5Ts8qaTKgHq1yTcqQ.png"></p>
+<p>You have probably heard about <a href="https://kubernetes.io/">Kubernetes</a>. Alright. If you are in the Data Science field, you might be wondering what’s being baked for you based on K8s. Well, for 2018… that’s probably <a href="https://www.kubeflow.org/">Kubeflow</a>!</p>
+<blockquote>
+<p>Kubeflow is <em>the machine learning toolkit for Kubernetes</em></p>
+</blockquote>
+<p>It provides scalable machine learning workflows, and since it relies on K8s, it promises infrastructure-free containerized services for machine learning practitioners. In other words, Kubeflow ships with the following services:</p>
+<ul>
+<li>
+<p>JupyterHub, for the well-known Jupyter Notebooks and JupyterLab</p>
+</li>
+<li>
+<p>TensorFlow model training</p>
+</li>
+<li>
+<p>Optimized model serving, with support for NVIDIA TensorRT</p>
+</li>
+<li>
+<p>Pipelines to manage experiments, deployments, etc.</p>
+</li>
+</ul>
+<p>That sounds great, finally, no more manual deployment of Jupyter and (re)-adapting those template scripts to train a bunch of models.</p>
+<p><img alt="My reaction to my first reading on Kubeflow (src: giphy.com)" src="https://cdn-images-1.medium.com/max/2000/0*bM_MiV_BE_uXoEP1"></p>
+<p><em>My reaction to my first reading on Kubeflow (src: giphy.com)</em></p>
+<p>Thrilled by the glamorous <a href="https://medium.com/kubeflow/kubeflow-0-4-release-update-whats-coming-c55820e28915">announcements</a>, I thought “Hey this Kubeflow sounds pretty cool, but I’d like to test it”. After I had unsuccessfully searched for screencast demos on YouTube, tutorials with explicative visuals, or step-by-step guides on what you could do with Kubeflow, I quickly realized there’s very little material out there for the final user (e.g. a data scientist like me).</p>
+<blockquote>
+<h1>But… how does it look like?</h1>
+</blockquote>
+<h2>Running Kubeflow</h2>
+<p>After I had wasted several hours on trying to run Kubeflow v0.3.4 on macOS, I found this <a href="https://www.kubeflow.org/docs/started/getting-started-gke/">Deploy Kubeflow on GKE using the UI</a> to work (almost) seamlessly. All you need is a GCP account and some spare time. After all the steps, you’ll have a running instance of Kubeflow. It starts with a pretty empty UI, this is the entry point to the services listed above.</p>
+<p><img alt="View of Kubeflow v0.3.4 initial dashboard" src="https://cdn-images-1.medium.com/max/2650/1*VyDhM6zobiEliMX1wPlmFw.png"><em>View of Kubeflow v0.3.4 initial dashboard</em></p>
+<h2>JupyterHub</h2>
+<p>I had a bit of initial hustle with the JupyterHub service due to a “401: Unauthorized” error. However, after starting the server, you’ll be able to select an image for your Jupyter workspace. Note that there’s support for both CPU and GPU in all of the recent tensorflow versions. Kubeflow should be able to automagically provision GPU resources if that’s available in the cluster.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*qZU-3B94hfBD3wrIXdRY_w.png"></p>
+<p>The user can configure details such as CPU, GPU and RAM memory to assign to the Notebook instance.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2000/1*aMUtX7kj7E1g0aH64ZkT1A.png"></p>
+<p>After spawning a Jupyter instance I started exploring around. It comes with 2 Python kernels pre-installed (i.e. py2 and py3). However, I was a bit disappointed about not being able to create any Notebook, nor a terminal window. It’d just fail with a cryptic “Not Found” message.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*SMVOTIQF1ZYuO0BKYVmqLA.png"></p>
+<p>Need more info? Check the <a href="https://github.com/jupyterhub/kubespawner">jupyterhub/kubespawner docs</a>.</p>
+<h2>Tensorflow Job dashboard</h2>
+<p>The TF Job dashboard is the component you can use to run TensorFlow training jobs. Since there’s K8s under the hood, I’d expect this to scale out smoothly and map the training jobs in a smart way. The UI is pretty basic here and you can create and monitor jobs, as well as managing them by namespace. Here’s how it looks like:</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*PWY_27oppG558n9jpcRTgg.png"></p>
+<p>Want more info? Check the <a href="https://github.com/kubeflow/tf-operator">kubeflow/tf-operator docs</a>.</p>
+<h2>Pipeline dashboard</h2>
+<p>This is the place where you compose and build data pipelines, and manage running experiments. You build an ETL pipeline with visual tools.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2650/1*I00jHRPkpXqh8rMOCsI7fA.png"></p>
+<p>More info on <a href="https://github.com/kubeflow/pipelines">kubeflow/pipelines here</a>.</p>
+<h2>Conclusions</h2>
+<p>I’d have liked to say more about Kubeflow but the v0.3.4 seemed pretty unusable for me. Although <a href="https://github.com/kubeflow/kubeflow/releases">v0.4.0-rc2</a> is already out (<a href="https://medium.com/kubeflow/kubeflow-0-4-release-update-whats-coming-c55820e28915">see announcement</a>), I didn’t find an easy (I mean dummy proof!) way to deploy it for a quick test. It comes with all the tools you need to set up an analysis environment: Jupyter, model training scheduler, and an experiment dashboard. Once these three will be fully working, machine learning practitioners will have a scalable and flexible workbench to play with.</p>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="./2018/08/31/jupytercon-2018/#jupytercon-2018">JupyterCon 2018</a></h2>
+    <p>
+      Posted on Fri 31 August 2018 in <a href="./category/generic.html">Generic</a>
+
+
+    </p>
+  </header>
+  <div>
+      <p>JupyterCon is a yearly conference held in New York City that promotes the Jupyter project, its values and a the notable projects built on top of it.
+It's organized by NumFOCUS and O'Reilly Media with the support of several commercial sponsors.
+You can check out the schedule <a href="https://conferences.oreilly.com/jupyter/jup-ny/schedule/2018-08-21">here</a> and hopefully save the date for 2019!</p>
+<p>Thanks to my company <a href="https://twitter.com/Hal24k">@Hal24k</a> I attended the 2018 edition for the entire 4 days.
+It's been a great experience with lots of inspiring talks and insightful tutorials.
+Make sure to check out the <a href="https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/stype/1268">related events</a>: poster session &amp; drinks took place before or after the conference hours; note there were additional events arranged by main sponsors (like Netflix) held in external venues, but these are not listed on the conference webpage.</p>
+<h2>Highlights</h2>
+<p>You can check the keynotes linked in <a href="https://www.oreilly.com/ideas/highlights-from-jupytercon-ny-2018">O'Reilly page</a>.
+My favorites are:</p>
+<ul>
+<li>Paco Nathan's "Jupyter trends in 2018"</li>
+<li>Carol Willing's "Sustaining wonder: Jupyter and the knowledge commons"</li>
+<li>Tracy Teal's "Democratizing data"</li>
+<li>Julia Meinwald's "Why contribute to open source?"</li>
+<li>Fernando Perez's "Sea change: What happens when Jupyter becomes pervasive at a university?"</li>
+</ul>
+<p>Since Paco's keynote is the best in my opinion, here's the video.
+This one, in particular, gives you an overview of the scale of Jupyter project, and it's just terrific to see so much potential.
+<div align="center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t0MNlJV7_gM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></p>
+<h2>Lesson learned</h2>
+<p>Foremost take home is a deeper understanding of what Jupyter actually is.
+As many data scientist, I've been using Jupyter Notebook and JupterLab in my daily work.
+I thought it was a revolutionary tool that brought IPython interactivity to the next level.
+I was wrong.
+The first mistake was confusing Jupyter with Notebook or Lab as part of the unique blob.
+If you think about that's quite common.
+Most users start with these tools by working on a scientific assignment and all they care is getting to the results.
+You don't ask yourself much about what's behind all that.</p>
+<p>Truth is Notebook and Lab are just 2 of the many components of the Jupyter eco-system.
+Indeed you can think of Jupyter as a broader project that comprises a multitude of tools.
+This <a href="https://jupyter.org/documentation">documentation page</a> gives you a nice overview of what I'm talking about.
+To help this narrative I'll report that here: </p>
+<ul>
+<li>General: yes you can contribute to Jupyter!</li>
+<li>User Interfaces: there are many more than Notebook and JupyterLab! Check out third parties' <a href="https://nteract.io/">nteract</a>, a desktop application that bring <code>.ipynb</code> files editing to your notebook.</li>
+<li>IPython</li>
+<li>Kernels</li>
+<li>Widgets</li>
+<li>Notebook Documents</li>
+<li>JupyterHub</li>
+<li>Deployment</li>
+<li>Foundations</li>
+</ul>
+<p>A more technical diagram of the key components in Jupyter is available <a href="https://jupyter.readthedocs.io/en/latest/architecture/visual_overview.html">here</a>, however, I believe it's incomplete since it doesn't include many of the hottest releases like JupyterLab.</p>
+<p>So? The Jupyter project is about supporting the development of modular components (listed above) that can be improved, extended and bundled by the entire community!
+Only the official <a href="https://github.com/jupyter">Jupyter GitHub account</a> counts 69 repositories and these are only a subset of what's available on the web.</p>
+<p>Developers put out a call to contribute on modules and get back to them with feedbacks.</p>
+<h2>JupyterLab's extensions</h2>
+<p>First of all a clarification.
+In the Jupyter eco-system, there are many things called 'widget' and this might lead to some confusion.
+For instance, it's not entirely clear to me the difference between the <a href="https://ipywidgets.readthedocs.io/en/latest/index.html">Jupyter Widgets</a> and the <a href="https://jupyterlab.readthedocs.io/en/stable/user/extensions.html">JupyterLab Extensions</a>, at least in terms of implementation.
+Anyways, I'd like to spend a few words on JupyterLab's Extensions because I think that's the really cool innovation with Lab from the user point of view.</p>
+<p>The core development team was present at JupyerCon and they made it clear: JupyterLab is an extensible platform.
+The Lab application is nothing more than a bundle of extensions that delivers the "standard" experience but users are encouraged to package their own.</p>
+<p>Throughout the training, we got hands-on <a href="https://github.com/jupyterlab/jupytercon-jupyterlab-training">this repo</a> and built a set of extensions.
+Most of the code is in <a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a> and nodejs/npm so you'll have to be a bit familiar with these web-dev technologies.
+Among others, we managed to build a widget that <a href="https://github.com/jupyterlab/jupyterlab-mp4/blob/master/tutorial.md">renders MP4 videos</a> with just a few lines of code.
+The idea is you start from a <a href="https://en.wikipedia.org/wiki/MIME">MIME</a> renderer template and write the necessary code to open, serialize and display mp4 content.
+A bit of CSS will make the layout nice and neat.
+This is a functional but relatively simple plugin, that involves only front-end coding.
+More complex extensions, such as the one for <a href="https://github.com/jupyterlab/jupyterlab-github">accessing GitHub repositories</a> needs a bit of back-end hacking.</p>
+<p>The bottom line is: here's the platform, now build your own extensions.
+Indeed there are quite many extensions out there but not everyone is aware of it.
+A good starting point is probably the "Extension Manager", a widget that lets you look up and install plugins.
+It's disabled by default (at least in v0.33.12) and here's how to enable it.
+The widget will add an entry on the left side tab listing all the available extensions.
+You can install one just by clicking on the "Install" button.
+Bear in mind most extensions are early release so make sure you check the related repository to grasp if it's suitable.</p>
+<p><img alt="JupyterLab activate extension manager" src="gifs/jupyter-enable-extension-manager.gif" width="560px"></p>
+<p>I suggest to look up for extensions on GitHub and Npm directly as well.</p>
+<p>Note: the current version is ~v0.34 and there's still some time to go for the v1.0.
+Accroding to <a href="https://twitter.com/sccolbert">@sccolber</a> the way to v1.0 will probably break some of the existing extensions.</p>
+  </div>
+</article>
+
+
+
+
+    <footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Enrico Rotundo's site ",
+  "url" : ".",
+  "image": "/images/avatar.jpg",
+  "description": "Enrico's Thoughts"
+}
+</script>
+
+</body>
+</html>
