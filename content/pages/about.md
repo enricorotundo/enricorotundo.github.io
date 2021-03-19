@@ -12,6 +12,10 @@ Works as a contractor data scientist.
 Likes tech, startups, data, [photography](https://enrico-rotundo.tumblr.com/), mountain biking, hiking.
 Enthusiast meetup [founder](https://www.meetup.com/en-AU/Jupyter-Amsterdam/), sporadic [speaker](https://www.meetup.com/PyData-Bristol/events/255667468/).
 
+
+bla bla
+
+
 ## Books
 
 ### Data science
