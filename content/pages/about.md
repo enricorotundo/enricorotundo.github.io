@@ -14,8 +14,6 @@ Enthusiast meetup [founder](https://www.meetup.com/en-AU/Jupyter-Amsterdam/), sp
 
 ## Books
 
-66666666
-
 ### Data science
 
 * Pattern Recognition and Machine Learning
