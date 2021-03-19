@@ -4,15 +4,13 @@ Category: Generic
 URL:
 save_as: index.html
 
-[Enrico](https://twitter.com/EnricoRotundo). 
+[Enrico](https://twitter.com/EnricoRotundo).
 Born in Ninety One.
 Currently based in Italy.
-Previously lived & worked across USA, UK, NL and ITA. 
-Works at [SAPIA](https://www.sapia.co/).
+Previously lived & worked across USA, UK, NL and ITA.
+Works as a contractor data scientist.
 Likes tech, startups, data, [photography](https://enrico-rotundo.tumblr.com/), mountain biking, hiking.
-Enthusiast meetup [founder](https://www.meetup.com/en-AU/Jupyter-Amsterdam/).
-Sporadic [speaker](https://www.meetup.com/PyData-Bristol/events/255667468/).
-
+Enthusiast meetup [founder](https://www.meetup.com/en-AU/Jupyter-Amsterdam/), sporadic [speaker](https://www.meetup.com/PyData-Bristol/events/255667468/).
 
 ## Books
 
