@@ -24,11 +24,8 @@ pelican --listen --autoreload
 
 ### Publish
 
-From `source` branch:
+1. From `source` branch: `git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push`
 
-```
-git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push
-```
+2. Add custom domain (`enricorotundo.com`) and enable HTTPS --> https://github.com/enricorotundo/enricorotundo.github.io/settings
 
 Give it 1 minuto to update + use Incogito!
-Check if custom domain and HTTPS are set uo --> https://github.com/enricorotundo/enricorotundo.github.io/settings
