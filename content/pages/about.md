@@ -13,8 +13,6 @@ Likes tech, startups, data, [photography](https://enrico-rotundo.tumblr.com/), m
 Enthusiast meetup [founder](https://www.meetup.com/en-AU/Jupyter-Amsterdam/), sporadic [speaker](https://www.meetup.com/PyData-Bristol/events/255667468/).
 
 
-bla bla
-
 
 ## Books
 

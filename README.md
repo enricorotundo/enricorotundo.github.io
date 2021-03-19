@@ -30,5 +30,5 @@ From `source` branch:
 git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push
 ```
 
-Give it a few seconds + use Incogito.
-
+Give it 1 minuto to update + use Incogito!
+Check if custom domain and HTTPS are set uo --> https://github.com/enricorotundo/enricorotundo.github.io/settings
