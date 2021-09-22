@@ -34,6 +34,6 @@ Head to http://127.0.0.1:8000/
 
 1. From `source` branch: `git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push`
 
-2. Add custom domain (`enricorotundo.com`) and enable HTTPS --> https://github.com/enricorotundo/enricorotundo.github.io/settings
+2. Re-add custom domain (`enricorotundo.com`) and enable HTTPS --> https://github.com/enricorotundo/enricorotundo.github.io/settings/pages
 
 Give it 1 minute to update + use Incogito!
