@@ -1,6 +1,13 @@
 # enricorotundo.github.io
 Dropping a few commands here since I tend to forget them.
 
+### Clone
+
+```
+https://github.com/enricorotundo/enricorotundo.github.io.git
+git checkout source
+```
+
 ### Create env
 
 ```
@@ -16,10 +23,10 @@ pelican-themes --install ~/git/Flex --verbose
 
 ### Develop
 ```
+# cd back into this repo
 source venv/bin/activate
 pelican --listen --autoreload
 ```
-
 
 
 ### Publish
@@ -28,4 +35,4 @@ pelican --listen --autoreload
 
 2. Add custom domain (`enricorotundo.com`) and enable HTTPS --> https://github.com/enricorotundo/enricorotundo.github.io/settings
 
-Give it 1 minuto to update + use Incogito!
+Give it 1 minute to update + use Incogito!
