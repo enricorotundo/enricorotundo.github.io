@@ -1,14 +1,14 @@
 # enricorotundo.github.io
 Dropping a few commands here since I tend to forget them.
 
-### Clone
+### 1. Clone
 
 ```
 git clone git@github.com:enricorotundo/enricorotundo.github.io.git
 git checkout source
 ```
 
-### Create env
+### 2. Create env
 
 ```
 virtualenv venv
@@ -21,15 +21,16 @@ git clone git@github.com:alexandrevicenzi/Flex.git
 pelican-themes --install ~/git/Flex --verbose
 ```
 
-### Develop
+### 3. Develop
 ```
 # cd back into this repo
 source venv/bin/activate
 pelican --listen --autoreload
 ```
 
+Head to http://127.0.0.1:8000/
 
-### Publish
+### 4. Publish
 
 1. From `source` branch: `git commit -am "up" && pelican content -o output -s pelicanconf.py && ghp-import --branch=master output && git push -f origin master && git push`
 
