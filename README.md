@@ -4,7 +4,7 @@ Dropping a few commands here since I tend to forget them.
 ### Clone
 
 ```
-https://github.com/enricorotundo/enricorotundo.github.io.git
+git clone git@github.com:enricorotundo/enricorotundo.github.io.git
 git checkout source
 ```
 
